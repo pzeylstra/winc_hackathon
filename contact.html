@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML en CSS opdracht</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="border_bottom">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Specificaties</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <p>Neem gerust contact met ons op. U kunt daarvoor het formulier gebruiken en natuurlijk kunt u ook altijd bellen.</p>
+        <div class="flex-container_contact">
+            <div>
+                <p>Telefoonnummer: (06) 33 66 22 84<br>Adres: Jasmijnstraat 25 | 6666 XG Heteren<br>KvK: 09170711</p>
+            </div>
+            <div>
+                <form name="contact" method="POST" data-netlify="true">
+            <div>
+                <label>Uw naam <input type="text" name="naam" /></label>
+            </div>
+            <div>
+                <label>Uw e-mailadres <input type="email" name="e-mailadres" /></label>
+            </div>
+            <div>
+                <label>Telefoonnummer <input type="tel" name="telefoonnummer" /></label>
+            </div>
+            <br>
+            <div>
+                <label>Uw bericht</label>
+            </div>
+            <div>
+                    <textarea id="bericht" name="bericht" rows="10"></textarea>
+            </div>
+            <br>
+                <button type="reset">Reset</button>
+                <button type="submit">Verzend</button>
+            </form>
+            </div>
+        </div>
+      </main>
+    <footer class="border_top">
+        <aside>
+            <p>©2021 Jasmijnhomes</p>
+        </aside>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+body {
+    background-image: url("veluwevakantie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2e2e2e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.5rem 1rem 2rem 1rem;
+    line-height: 1.8em;
+}
+
+main {
+    margin: 20px 0px;
+    padding: 30px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2f5026;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+h2 {
+    color: #2f5026;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-container div {
+    background-color: #fff;
+    margin: 10px;
+    text-align: center;
+}
+
+.flex-container div p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.flex-container_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-container_about div {
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.flex-container_about div p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #2e2e2e;
+    text-align: center;
+}
+.flex-container_about div ul li{
+    text-align: left;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.flex-container_gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.flex-container_gallery .box {
+    margin: 5px 5px -2px 5px;
+}
+
+.flex-container_gallery .box img {
+    width: 100%
+}
+
+.flex-container_contact {    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.flex-container_contact p {
+    color: #2e2e2e;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.flex-container_contact div {
+    background-color: #fff;
+    margin: 5px;    
+}
+
+form {
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 0.9em;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    background-color: #a00279;
+    color: #fff;
+    padding: 5px 20px;
+    border-color: #a00279;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #a00279;
+}
+
+a:link, a:visited {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a00279;
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin: 5px;
+}
+
+.button {  
+    border: 1px solid #fff;
+    border-radius: 10px;  
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    float: right;
+}
+
+.border_top {
+    border-top: 1px solid white;
+    margin-top: 50px;
+}
+
+.border_top p {
+    color: white;
+    font-size: 12px;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 600px) {
+
+body {
+    padding: 50px 20px;
+}
+
+nav a:link {
+    color: #2f5026;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 20px
+}
+
+p {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+a:link {
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+body {
+    padding: 50px 120px;
+    height: 90vh;
+}    
+
+a:link, a:visited {
+    font-size: 16x;
+    }
+        
+nav li {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+        
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.flex-container h2 {
+    text-align: center;
+}
+
+.flex-container div {
+    margin: 10px;
+    width: 30%;
+}
+
+.flex-container_about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.flex-container_about div {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #2e2e2e;
+    width: 50%;
+    text-align: left;
+    padding: 20px 25px;
+    margin-left: 10px;
+}
+
+.flex-container_about div h2 {
+    padding-left: 20px;
+}
+
+.flex-container_about div p {
+    text-align: left;
+}
+
+.flex-container_gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.flex-container_contact {
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+.flex-container_contact div {
+    background-color: #fff;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.border_top {
+    margin-top: 150px;
+}
+}
